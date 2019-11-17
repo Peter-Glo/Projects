@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/css/all.css">
+    <style>
+    #display{
+        height:55px;
+        
+    }
+    #fun{
+        width:85%;
+    }
+    </style>
+</head>
+<body class="bg-green">
+        <p id="aler" class="w3-pink w3-text-white"></p>
+        <nav style="width: 350px; margin-left:10%; height:600px; border: 2px solid black;" class="w3-panel w3-center"><p class="w3-pale-red w3-xlarge w3-car-4" id="displa"></p>
+    <input name="" class="w3-pale-red w3-xlarge w3-car-4" id="display"><br><br>
+<nav class="w3-card-4">
+<button id="fun" onclick="func()" class="w3-round w3-btn btn bg-warning">ON</button>
+</nav>
+            <div id="wall" class="w3-card-4" style="height: 430px;">
+
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" onclick="clickme(event)">Log</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" onclick="clickme(event)">^2</button>
+        <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" onclick="clickme(event)">Cos</button>
+        <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator"  onclick="clickme(event)">Tan</button>
+        <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" onclick="clickme(event)">Sin</button>
+        <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator"  onclick="clickme(event)">Sqrt</button>
+        <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" onclick="clickme(event)">Hyp</button>
+        <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" onclick="clickme(event)">^</button>
+        <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" onclick="clickmeb(event)">CE</button>
+
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" value="%" onclick="clickme(event)">%</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" value="/" onclick="clickme(event)">/</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" onclick="clickmeg(event)">C</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="7" onclick="clickme(event)">7</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="8" onclick="clickme(event)">8</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="9" onclick="clickme(event)">9</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" value="+" onclick="clickme(event)">+</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="4" onclick="clickme(event)">4</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="5" onclick="clickme(event)">5</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="6" onclick="clickme(event)">6</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" value="-" onclick="clickme(event)">-</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="1" onclick="clickme(event)">1</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="2" onclick="clickme(event)">2</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="3" onclick="clickme(event)">3</button>
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator" value="*" onclick="clickme(event)">*</button>
+    
+    <button class="w3-round w3-btn bg-warning" style="width: 60%; height:40px; margin-top:20px;" id="0" onclick="clickme(event)">0</button>
+    
+    <button class="w3-round w3-btn bg-warning" style="width: 20%; height:40px; margin-top:20px;" id="operator"  value="=" onclick="opob()">=</button>
+            </div>
+</nav>
+
+
+<script>
+// function func() {
+//     if(fun.innerText =="OFF"){
+//         wall.innerHTML.style.display="disable";
+//               fun.innerText ="ON";
+//     }else if(fun.innerText =="ON"){
+//         wall.innerHTML.style.display ="enable";
+//         fun.innerText ="OFF"
+//     }
+// }
+
+
+// function clickmee(e){
+// }
+
+// function clickmed(e){
+// }
+
+// function clickmec(e){
+   
+// }
+
+// function clickmef(e){
+
+// }
+// function hyp(e){
+// }
+
+    function clickmeb(e){
+          display.value = "";
+    }
+    // function clickmea(e){
+          
+          
+    // }
+    
+
+    function clickmeg(e){
+          display.value = display.value.slice (0,-1);
+    }
+
+function clickme(e){
+display.value += e.target.innerText;
+}
+function opob(){
+// const q = display.value;
+    if (display.value == "Log") {
+        displa.innerHTML = eval(Math.log10(display.value) + display.value);
+    } else if (display.value == "Tan") {
+         displa.innerHTML = eval(Math.tan(display.value * Math.PI / 180) + display.value);
+     } else if (display.value == "Cos") {
+      displa.innerHTML = eval(Math.cos(display.value * Math.PI / 180) + display.value);
+         } else if (display.value == "Hyp") {
+    displa.innerHTML = eval(Math.hyp(display.value * Math.PI / 180) + display.value);
+
+} else if (display.value == "Sin") {
+    displa.innerHTML = eval(Math.sin(display.value * Math.PI / 180) + display.value);
+
+} else if (display.value == "^2") {
+    displa.innerHTML = eval(Math.pow(display.value, 2) + display.value);
+} else if (display.value == "Sqrt") {
+    displa.innerHTML = eval(Math.sqrt(display.value) + display.value);
+} 
+    displa.innerHTML = eval(display.value);
+    
+
+    // clickmef();
+}
+// function clickmel(e){
+//     }
+
+    
+</script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	
+<input class="m-2" type="text" placeholder="Name" id="allname" name=""><br>
+<input class="m-2" type="text" placeholder="Author" id="allauthor" name=""><br>
+<input class="m-2" type="number" placeholder="No of pages" id="allpages" name=""><br>
+<button class="m-2" onclick="sdd()">submit</button>
+<button class="m-2" onclick="showlib()">Show added Books</button>
+
+<div id="result"></div>
+
+<script type="text/javascript">
+	function sdd() {
+		var nameobj = {};
+		var array = [localStorage.getItem("newbook")];
+		nameobj.name = allname.value;
+		nameobj.author = allauthor.value;
+		nameobj.pages = allpages.value;
+array.push(nameobj);
+		localStorage.setItem("newbook", JSON.stringify(array));
+		if (localStorage.getItem("newbook")) {
+			array += (localStorage.getItem("newbook"));
+		} else {
+			array = [];
+		}
+	}
+		
+
+
+</script>
+</body>
+</html>
